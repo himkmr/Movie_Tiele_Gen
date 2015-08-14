@@ -40,7 +40,7 @@ public class MovieTitleGen {
 			result2.next();
 			String noun = result1.getString("NAME");
 			String adjective = result2.getString("NAME");
-			System.out.println("Your Movie: " + noun + "  " + adjective);
+			System.out.println("Your Movie: " + adjective+" "+ noun );
 			System.out.println("Enter description: ");
 			String desc = sc.nextLine();
 			String insert_query = "insert into movie_titles values('" + noun
